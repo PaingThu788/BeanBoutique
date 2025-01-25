@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="PaingThu" content="Bean Boutique">
+    <meta name="keywords" content="html,css,web">
+    <meta name="description" content="Coffee Shop">
+    <meta http-equiv="refresh" content="15">
+    <link rel="icon" type="image/x-icon" href="bean.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bokor&family=Cabin+Condensed:wght@400;500;600;700&family=Jaro:opsz@6..72&family=Playwrite+US+Modern+Guides&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bokor&family=Cabin+Condensed:wght@400;500;600;700&family=Jaro:opsz@6..72&family=Playwrite+US+Modern+Guides&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="BeanBoutique.css">
+    <title> Bean Boutique </title>
+</head>
+
+<body>
+
+
+    <header>
+        <div id="header">
+            <h1> Bean Boutique </h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Home.html"> Home </a></li>
+            <li><a href="CoffeeSelection.html"> Coffee</a></li>
+            <li><a href="BlewingEquipment.html"> Equipments</a></li>
+            <li><a href="Events.html"> Events </a></li>
+            <li><a href="Offer.html"> Offers </a></li>
+            <li><a href="CartContainer.html" onclick="toggleCart()">
+                    Cart <span id="cart-count" class="cart-badge">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <form id="searchbox">
+        <input type="text" id="search" name="search" placeholder="Search..">
+    </form>
+
+
+
+    <div id="content1">
+        <img src="https://www.themodernman.com/wp-content/uploads/he-accepted-the-break-up-cut-off-contact-for-3-days-called-her-arranged-a-meet-up-and-got-her-back.jpg"
+            alt="people enjoying coffee">
+        <h2> You will Love at First Sip </h2>
+        <p>Experience the perfect blend of rich flavors and cozy vibes</p>
+        <form>
+            <button type="submit" formaction="CoffeeSelection.html"> Shop </button>
+        </form>
+
+    </div>
+
+    <section>
+        <h3 class="content2"> This is Everything You Need for the Perfect Brew</h3>
+        <div class="slideshow-container">
+
+            <div class="slide fade">
+                <img src="https://www.freshroastedcoffee.com/cdn/shop/products/medium_04d17ab5-82c4-45ff-aabc-75f25972f6c5_500x_crop_center.jpg?v=1703809806"
+                    alt="Bean" class="slide-image">
+            </div>
+
+
+            <div class="slide fade">
+                <img src="https://www.ippinka.com/wp-content/uploads/2014/08/espresso-maker-04.jpg" alt="Machine"
+                    class="slide-image">
+            </div>
+
+
+            <div class="slide fade">
+                <img src="https://img.freepik.com/premium-photo/cup-coffee-white-background_763111-7837.jpg"
+                    alt="Photo 3" class="slide-image">
+            </div>
+
+
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+        </div>
+    </section>
+    <div class="content2">
+        <p> Whether you're looking to buy a coffee machine, premium beans, or simply enjoy a cup at our
+            cozy shop, we've got you covered—in-store or online!</p>
+        <form>
+            <button type="submit" formaction="BlewingEquipment.html"> Shop Equipments </button>
+            <button type="submit" formaction="CoffeeSelection.html"> Shop Coffee </button>
+        </form>
+    </div>
+
+    <div id="Feature">
+        <h3> Feature Product </h3>
+    </div>
+
+
+
+
+    <div id="feature2">
+
+        <div class="responsive2">
+            <div class="gallery2">
+                <a target="_blank"
+                    href="https://media1.thehungryjpeg.com/thumbs2/ori_14737_04ef82632a16b9770133672bf5e93c6900925c22_bag-pack-mock-up.jpg">
+                    <img src="https://media1.thehungryjpeg.com/thumbs2/ori_14737_04ef82632a16b9770133672bf5e93c6900925c22_bag-pack-mock-up.jpg"
+                        alt="product" width="600" height="400">
+                </a>
+                <div class="desc">
+                    <p>
+                        <a href="Espresso.html"> Espresso <br>
+                            <i> $4.00 </i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="responsive2">
+            <div class="gallery2">
+                <a target="_blank"
+                    href="https://media1.thehungryjpeg.com/thumbs2/ori_14737_04ef82632a16b9770133672bf5e93c6900925c22_bag-pack-mock-up.jpg">
+                    <img src="https://media1.thehungryjpeg.com/thumbs2/ori_14737_04ef82632a16b9770133672bf5e93c6900925c22_bag-pack-mock-up.jpg"
+                        alt="product" width="600" height="400">
+                </a>
+                <div class="desc">
+                    <p>
+                        <a href="#">Mocha <br>
+                            <i> $4.00 </i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="responsive2">
+            <div class="gallery2">
+                <a target="_blank"
+                    href="https://media1.thehungryjpeg.com/thumbs2/ori_14737_04ef82632a16b9770133672bf5e93c6900925c22_bag-pack-mock-up.jpg">
+                    <img src="https://media1.thehungryjpeg.com/thumbs2/ori_14737_04ef82632a16b9770133672bf5e93c6900925c22_bag-pack-mock-up.jpg"
+                        alt="product" width="600" height="400">
+                </a>
+                <div class="desc">
+                    <p>
+                        <a href="#">Flat White <br>
+                            <i> $4.00 </i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="responsive2">
+            <div class="gallery2">
+                <a target="_blank"
+                    href="https://media1.thehungryjpeg.com/thumbs2/ori_14737_04ef82632a16b9770133672bf5e93c6900925c22_bag-pack-mock-up.jpg">
+                    <img src="https://media1.thehungryjpeg.com/thumbs2/ori_14737_04ef82632a16b9770133672bf5e93c6900925c22_bag-pack-mock-up.jpg"
+                        alt="product" width="600" height="400">
+                </a>
+                <div class="desc">
+                    <p>
+                        <a href="#">Cold Brew <br>
+                            <i> $4.00 </i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <form>
+            <button type="submit" formaction="CoffeeSelection.html"> See More </button>
+        </form>
+    </div>
+
+    <div id="feature3">
+        <div>
+            <img src="https://eat2gather.nl/wp-content/uploads/2018/06/Eat2Gather_Barista.jpg" alt="Barista Workshop">
+            <h2>Barista Workshop</h2>
+            <p>Day: Every Friday </p>
+            <p>2:00 PM - 4:00 PM</p>
+            <p> Learn the secrets of brewing and latte art in this fun, hands-on session. Reserve your spot by filling
+                out the form under this link</p>
+            <form>
+                <button type="submit" formaction="BaristaEvent.html"> Open </button>
+                <button type="submit" formaction="Events.html" id="seemore"> See More </button><br><br>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="interactive-map">
+        <h3>Find Us Here</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799125277!2d-74.25986670500002!3d40.6971494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24f2aaf3ec6f5%3A0x4950e3fc6161f2c1!2sYour%20Shop%20Location!5e0!3m2!1sen!2sus!4v1617842348399!5m2!1sen!2sus">
+        </iframe>
+    </div>
+
+    
+    <div class="follow-us">
+        <h1>Follow Us on Instagram</h1>
+        <div class="instagram-box">
+            <div class="profile">
+                <img src="https://www.freepnglogos.com/uploads/coffee-logo-png/coffee-logo-logo-elements-logo-objects-3.png" alt="Profile Picture" class="profile-pic">
+                <div class="profile-info">
+                    <h2>Bean_Boutique</h2>
+                    <p>📸 Sharing our coffee vibes! ☕</p>
+                </div>
+            </div>
+            <button>Follow</button>
+        </div>
+    </div>
+
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Welcome to Our Shop!</h2>
+            <p>Sign up with your email and get a special discount on your first purchase!</p>
+            <form id="signup-form">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit">Sign Up </button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a>Email: support@beanboutique.com</a></li>
+                    <li><a>Phone: +123 456 7890</a></li>
+                    <li><a>Address: 123 Street, Yangon, Myanmar</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Track Order</h3>
+                <ul>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Policies</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="social">
+            <p> Follow us on social media <img src="instagram.png" alt="instagram"><img src="facebook.png"
+                    alt="facebook"><img src="social.png" alt="social"></p>
+        </div>
+        <div class="footer-bottom">
+            2024 Bean Boutique. All Rights Reserved.
+
+        </div>
+    </footer>
+
+    <div class="welcome-popup">
+        <div class="popup-content">
+            <h2>Welcome!</h2>
+            <p>Sign up now to get <strong>10% off</strong> your first order.</p>
+            <form class="signup-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <button class="close-popup" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+
+    <script src="BeanBoutique.js"></script>
+
+
+</body>
+
+</html>

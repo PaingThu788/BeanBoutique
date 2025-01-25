@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="PaingThu" content="Bean Boutique">
+    <meta name="keywords" content="html,css,web">
+    <meta name="description" content="Coffee Shop">
+    <meta http-equiv="refresh" content="15">
+    <link rel="icon" type="image/x-icon" href="bean.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bokor&family=Cabin+Condensed:wght@400;500;600;700&family=Jaro:opsz@6..72&family=Playwrite+US+Modern+Guides&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bokor&family=Cabin+Condensed:wght@400;500;600;700&family=Jaro:opsz@6..72&family=Playwrite+US+Modern+Guides&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="BeanBoutique.css">
+    <title> Coffee Night Event </title>
+</head>
+
+<body>
+
+
+    <header>
+        <div id="header">
+            <h1> Bean Boutique </h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="CoffeeSelection.html"> Coffee</a></li>
+            <li><a href="BlewingEquipment.html"> Equipments</a></li>
+            <li><a href="Events.html"> Events </a></li>
+            <li><a href="Offer.html"> Offers </a></li>
+            <li><a href="CartContainer.html" onclick="toggleCart()">
+                    Cart <span id="cart-count" class="cart-badge">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="content7">
+        <form action="#" method="get">
+
+            <label for="name"> Name: </label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label> Phone: </label>
+            <input type="tel"><br><br>
+
+            <label> Email: </label>
+            <input type="email" pattern=".+@gmail\.com" size="20" required> <br><br>
+
+            <label for="Male"> Male </label>
+            <input type="radio" id="Male" name="gender">
+            <label for="Female"> Female</label>
+            <input type="radio" id="Female" name="gender"><br><br>
+
+            <label> Preferred Workshop Date: </label>
+            <input type="date" name="d"><br><br>
+
+            <label for="Message"> Reason for joining: </label>
+            <textarea id="Message" name="message"></textarea><br><br>
+
+            <label for="Subscribe"> Subscribe to newsletter: </label>
+            <input type="checkbox" id="Subscribe" name="newsletter"><br><br>
+
+            <label for="Consent"> Permission to use photos/videos of the event for promotional purposes: </label>
+            <input type="checkbox" id="Consent" name="Consent"><br><br>
+
+
+            <input type="reset" value="Clear">
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a>Email: support@beanboutique.com</a></li>
+                    <li><a>Phone: +123 456 7890</a></li>
+                    <li><a>Address: 123 Street, Yangon, Myanmar</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Track Order</h3>
+                <ul>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Policies</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="social">
+            <p> Follow us on social media <img src="instagram.png" alt="instagram"><img src="facebook.png"
+                    alt="facebook"><img src="social.png" alt="social"></p>
+        </div>
+        <div class="footer-bottom">
+            2024 Bean Boutique. All Rights Reserved.
+
+        </div>
+    </footer>
+
+    <div class="welcome-popup">
+        <div class="popup-content">
+            <h2>Welcome!</h2>
+            <p>Sign up now to get <strong>10% off</strong> your first order.</p>
+            <form class="signup-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <button class="close-popup" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
